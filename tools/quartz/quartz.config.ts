@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "legalralist.github.io/law-llm-wiki-example",
+    baseUrl: "legalrealist.github.io/law-llm-wiki-example",
     ignorePatterns: ["private", "templates", ".obsidian", "log.md"],
     defaultDateType: "modified",
     theme: {
