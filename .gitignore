@@ -1,0 +1,23 @@
+# Source materials — kept local, never published
+raw/
+
+# Local tooling output
+tools/__pycache__/
+tools/reports/
+tools/quartz/node_modules/
+tools/quartz/public/
+tools/quartz/.quartz-cache/
+
+# OS / editor
+.DS_Store
+.obsidian/
+*.swp
+.vscode/
+.idea/
+.claude/
+
+# Obsidian vault scaffolding (not wiki content)
+Law School LLM Wiki/
+
+# Node (in case anything else lands at root)
+node_modules/
