@@ -1,15 +1,8 @@
 @use "./base.scss";
 
-// ── Mobile-friendly tables ──────────────────────────────────────────
-// Wrap every table in a horizontally-scrollable container so wide
-// tables don't blow out the viewport on phones/tablets.
-.table-container,
-table {
-  // If Quartz wraps tables in .table-container, style that;
-  // otherwise target <table> directly as a fallback.
-  display: block;
+.table-container {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; // smooth momentum scroll on iOS
+  -webkit-overflow-scrolling: touch;
 }
 
 table {
@@ -18,20 +11,11 @@ table {
 
   th,
   td {
-    white-space: nowrap;       // keep cells on one line so columns don't crush
     padding: 0.4rem 0.75rem;
-  }
-
-  // Let the "Summary" column (2nd col) wrap so it doesn't force extreme widths
-  td:nth-child(2),
-  th:nth-child(2) {
-    white-space: normal;
-    min-width: 200px;
   }
 }
 
-// ── Tighten spacing on small screens ────────────────────────────────
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   table th,
   table td {
     font-size: 0.85rem;
